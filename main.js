@@ -20,10 +20,9 @@ function loadHTML(elementId) {
 }
 
 function fancyLoadHTML(elementId) {
-	$("#main_wrapper > *").animate({"opacity": "0"}, 300);
+	$("#main_wrapper > *").animate({"opacity": "0"}, 300, function() { fadeInHTML(document.elementId); });
 
 	document.elementId = elementId;
-	setTimeout("fadeInHTML(document.elementId)", 500);
 }
 
 function fadeInHTML(elementId) {
@@ -33,20 +32,6 @@ function fadeInHTML(elementId) {
 	
 	$("#main_wrapper").animate({"height": getTotalHeight($("#main_wrapper > div.wrapper")),
 										"width": getTotalWidth($("#main_wrapper > div.wrapper"))},
-							1000);
-	$("#main_wrapper > div.wrapper").animate({"opacity": "1"}, 2000);
-
-	document.elementId = null;
-}
-
-function _fadeInHTML(elementId) {
-	loadHTML(elementId);
-	
-	$("#main_wrapper > div.wrapper").css({"height":"auto","opacity":"0"});
-	
-	$("#main_wrapper").animate({"height": getTotalHeight($("#main_wrapper > div.wrapper"))
-							+ parseInt($("#main_wrapper").css("padding-top").replace("px",""))
-							+ parseInt($("#main_wrapper").css("padding-bottom").replace("px",""))},
 							1000);
 	$("#main_wrapper > div.wrapper").animate({"opacity": "1"}, 2000);
 
