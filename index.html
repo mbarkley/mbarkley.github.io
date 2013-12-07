@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+   
+<html>
+	<head>
+		<title>Max Barkley -- Mathematician and Computer Scientist</title>
+		<link rel="stylesheet" type="text/css" href="font.css"/>
+		<link rel="stylesheet" type="text/css" href="main.css"/>	
+		<script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script language="javascript" type="text/javascript" src="jquery-css-transform.js"></script>
+		<script language="javascript" type="text/javascript" src="jquery-animate-css-rotate-scale.js"></script>		
+		<script language="javascript" type="text/javascript" src="main.js"></script>
+	</head>
+	<body onLoad="init()">
+		<img id="sketch" src="images/max_sketch.jpg" />
+		<div id="content_wrapper">
+			<nav>
+				<div class="starter"></div>
+				<div id="cloud1" class="cloud">
+					<div class="cloud_text" onClick="fancyLoadHTML('about_text');" onMouseOver="setActive('cloud1');" onMouseOut="removeActive('cloud1');">About Me</div>
+				</div>
+				<div class="connector"></div>
+				<div id="cloud2" class="cloud">
+					<div class="cloud_text" onClick="fancyLoadHTML('portfolio_text');" onMouseOver="setActive('cloud2');" onMouseOut="removeActive('cloud2');">Resume</div>
+				</div>
+				<div class="connector"></div>
+				<div id="cloud3" class="cloud">
+					<div class="cloud_text" onClick="fancyLoadHTML('contact_text');" onMouseOver="setActive('cloud3');" onMouseOut="removeActive('cloud3');">Contact Information</div>
+				</div>			
+			</nav>
+			<img id="main_connector" src="images/main_connector.png"/>
+			<section id="main_wrapper">
+				<div class="wrapper">
+					<noscript>
+						This site requires Javascript to properly display content. You can enable javascript in
+						through your browser's preferences menu.
+					</noscript>
+				</div>
+			</section>
+		</div>
+		<div id="about_text">
+			<div class="wrapper">
+			<h1>About Me</h1>
+				<p>I am Max Barkley, a Software Engineering Intern at <a href="http://www.redhat.com">Red Hat</a>
+				and an undergraduate at the <a href="http://www.utoronto.ca">University of Toronto</a>,
+				studying Mathematics, Computer Science, and Statistics.
+				I love my program and my current intern position because I have a passion for problem solving,
+				and I look forward to the future opportunities and challenges that both of these may lead to.</p>
+				
+				<p>In my spare time I enjoy solving problems on <a href="http://www.projecteuler.net">Project Euler</a>,
+				playing guitar, mentoring at workshops for <a href="http://www.ladieslearningcode.com">Ladies Learning Code</a>,
+				and cycling.</p>
+			</div>
+		</div>
+		<div id="portfolio_text">
+			<div class="wrapper" id="resume">
+				<a href="ResumePEY.pdf" class="button" target="_blank">Download PDF</a>
+				<iframe src="resume.html"></iframe>
+			</div>
+		</div>
+		<div id="contact_text">
+			<div class="wrapper" id="contact">
+				<h1>Contact Information</h1>
+				<h2>Max Barkley</h2>
+				<p>
+				<a href="mailto:max.barkley@gmail.com">max.barkley@gmail.com</a><br />
+				647-884-3663
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
