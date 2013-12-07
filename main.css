@@ -133,14 +133,14 @@ div.cloud_text {
 	padding: 70px 0px 20px;
 }
 
-#contact > p {
+#contact_wrapper > p {
 	font-size: 16pt;
 	text-align: center;
 	text-indent: 0px;
 	margin: 0px auto 0px;
 }
 
-#about_text, #portfolio_text, #contact_text {
+#about, #portfolio, #contact {
 	display: none;
 }
 

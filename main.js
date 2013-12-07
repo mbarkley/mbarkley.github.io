@@ -1,5 +1,12 @@
+PAGES = ["about", "portfolio", "contact"];
+
 function init() {
-	fadeInHTML('about_text');
+	hash = window.location.hash != null ? window.location.hash.replace("#","") : "";
+	if (PAGES.indexOf(hash) > -1) {
+		fadeInHTML(hash);
+	} else {
+		fadeInHTML("about");
+  }
 }
 
 function getTotalHeight(element) {
@@ -14,6 +21,10 @@ function getTotalWidth(element) {
 				+ parseInt(element.css("padding-right").replace("px","")));
 }
 
+function switchPage(elementId) {
+	window.location.hash = "#" + elementId;
+	fancyLoadHTML(elementId);
+}
 
 function loadHTML(elementId) {
 	document.getElementById("main_wrapper").innerHTML = document.getElementById(elementId).innerHTML;
