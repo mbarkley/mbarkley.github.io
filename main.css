@@ -109,6 +109,10 @@ div.cloud {
 	text-align: center;
 }
 
+div.cloud a {
+	text-decoration: none;
+}
+
 div.connector {
 	background-image: url("images/connector.png");
 	margin: auto 0px auto;
