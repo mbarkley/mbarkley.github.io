@@ -1,6 +1,11 @@
 PAGES = ["about", "portfolio", "contact"];
 
 function init() {
+	window.onhashchange = onHashChange;
+	onHashChange(null);
+}
+
+function onHashChange(event) {
 	hash = window.location.hash != null ? window.location.hash.replace("#","") : "";
 	if (PAGES.indexOf(hash) > -1) {
 		fadeInHTML(hash);
