@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "Arial";
-	src: url("fonts/Arial.eot");
-	src: local("Arial"), url("fonts/Arial.ttf") format("truetype");
+	src= url("fonts/Arial.eot");
+	src= local("Arial"), url("fonts/Arial.ttf") format("truetype");
 }
 @font-face {
 	font-family: "Arial";
-	src: url("fonts/Arial_Bold.eot");
-	src: local("Arial"), url("fonts/Arial_Bold.ttf") format("truetype");
+	src= url("fonts/Arial_Bold.eot");
+	src= local("Arial"), url("fonts/Arial_Bold.ttf") format("truetype");
 	font-weight: bold;
 }
