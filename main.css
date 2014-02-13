@@ -152,6 +152,10 @@ div.cloud_text {
 	margin: 0px auto 0px;
 }
 
+.social-logo {
+  margin: 30px 30px 0px;
+}
+
 #about, #portfolio, #contact {
 	display: none;
 }

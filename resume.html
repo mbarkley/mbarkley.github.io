@@ -5,31 +5,33 @@
 		<style type="text/css">
 			@font-face {
 				font-family: "DejaVu Serif Condensed";
-				src: url("../webpage2.0/Personal/fonts/DejaVuSerifCondensed.eot");
-				src: local("DejaVu Serif Condensed"), url("../webpage2.0/Personal/fonts/DejaVuSerifCondensed.ttf") format("truetype");
+				src= url("fonts/DejaVuSerifCondensed.eot");
+				src= local("DejaVu Serif Condensed"), url("fonts/DejaVuSerifCondensed.ttf") format("truetype");
+        font-weight: normal;
 			}
 			@font-face {
 				font-family: "DejaVu Serif Condensed";
-				src: url("../webpage2.0/Personal/fonts/DejaVuSerifCondensed-Bold.eot");
-				src: local("DejaVu Serif Condensed"), url("../webpage2.0/Personal/fonts/DejaVuSerifCondensed-Bold.ttf") format("truetype");
+				src= url("fonts/DejaVuSerifCondensed-Bold.eot");
+				src= local("DejaVu Serif Condensed"), url("fonts/DejaVuSerifCondensed-Bold.ttf") format("truetype");
 				font-weight: bold;
 			}
 			@font-face {
 				font-family: "DejaVu Serif Condensed";
-				src: url("../webpage2.0/Personal/fonts/DejaVuSerifCondensed-BoldItalic.eot");
-				src: local("DejaVu Serif Condensed"), url("../webpage2.0/Personal/fonts/DejaVuSerifCondensed-BoldItalic.ttf") format("truetype");
+				src= url("fonts/DejaVuSerifCondensed-BoldItalic.eot");
+				src= local("DejaVu Serif Condensed"), url("fonts/DejaVuSerifCondensed-BoldItalic.ttf") format("truetype");
 				font-weight: bold;
 				font-style: italic;
 			}
 			@font-face {
 				font-family: "Arial";
-				src: url("../webpage2.0/Personal/fonts/Arial.eot");
-				src: local("Arial"), url("../webpage2.0/Personal/fonts/Arial.ttf") format("truetype");
+				src= url("fonts/Arial.eot");
+				src= local("Arial"), url("fonts/Arial.ttf") format("truetype");
+        font-weight: normal;
 			}
 			@font-face {
 				font-family: "Arial";
-				src: url("../webpage2.0/Personal/fonts/Arial_Bold.eot");
-				src: local("Arial"), url("../webpage2.0/Personal/fonts/Arial_Bold.ttf") format("truetype");
+				src= url("fonts/Arial_Bold.eot");
+				src= local("Arial"), url("fonts/Arial_Bold.ttf") format("truetype");
 				font-weight: bold;
 			}
 		</style>
@@ -43,16 +45,20 @@
 				padding: 0px;
 			}
 			body {
-				width: 612pt;
-				height: 792pt;
 				//height: 1584pt;
-				text-align: left;
+				text-align: center;
 				//border: 1px solid black;
 				//padding: 54pt;
 				color: black;
 				font-size: 12pt;
 				font-family: "Times New Roman", serif;
 			}
+      body > div {
+				width: 612pt;
+				height: 792pt;
+        text-align: left;
+        margin: auto;
+      }
 			header {
 				text-align: center;
 				margin-bottom: 10px;
@@ -80,9 +86,8 @@
 			h3 {
 				margin: 0px auto 5px auto;
 				font-size: 11pt;
-				font-weight: normal;
 				background-color: lightgrey;
-				padding-left: 7pt;Arial
+				padding-left: 7pt;
 				padding-right: 20%;
 				border-radius: 3px;
 				font-weight: bold;
@@ -98,8 +103,9 @@
 				margin: 0px auto 10px auto;
 				color: rgb(20,20,20);
 				list-style-type: circle;
-				padding-left: 60px;
-				line-height: 14pt;
+				padding-left: 30px;
+        padding-right: 30px;
+				line-height: 1.15;
 			}
 			.skills ul {
 				padding-left: 20pt;
@@ -125,109 +131,112 @@
 		</style>
 	</head>
 	<body>
-		<header>
-			<h1>Max Barkley</h1>
-			(647) 884 3663<br />
-			max.barkley@gmail.com<br />
-			www.mpbarkley.ca
-		</header>
-		<section>
-			<h2>Technical Skills</h2>
-			<article class="skills">
-				<ul>
-					<li>Programming Languages: Python, Java, C, Bash, HTML/CSS, Javascript, PHP, Assembly</li>
-					<li>Applications and Frameworks: Apache, MySQL, PostgreSQL, Struts, Subversion, SSH, JQuery</li>
-					<li>6 years of experience with Linux (Ubuntu/Debian for personal use)</li>
-					<li>Experience setting up and running a Linux server (for personal use)</li>
-				</ul>
-			</article>
-		</section>
-		<section>
-			<h2>Education</h2>
-			<article>
-				<span class="date">2009 &ndash; Present</span>
-				<h3>H.B.Sc. Mathematics and Computer Science, <span class="italic">University of Toronto</span></h3>
-				<ul>
-					<li>Currently enrolled with a Mathematics Major, and Computer Science and Statistics Minors</li>
-					<li>3.26 CGPA</li>
-					<li>Relevant Courses: Software Design, Datastructures and Analysis, Introduction to Databases,
-					Programming on the Web, Software and System Tools, Computer Organization</li>
-				</ul>
-			</article>
-		</section>
-		<section>
-			<h2>Relevant Work Experience</h2>
-			<article>
-				<span class="date">2012 &ndash; Present</span>
-				<h3>Webmaster, <span class="italic">ScratchVox</span></h3>
-				<ul>
-					<li>Programmed front- and back-end code for the website</li>
-					<li>Tested the site's appearance across multiple platforms and browsers</li>
-					<li>Maintain and update the site</li>
-				</ul>
-			</article>
-			<article>
-				<span class="date">2012</span>
-				<h3>(Volunteer) Mentor, <span class="italic">Ladies Learning Code</span></h3>
-				<ul>
-					<li>Assisted non-technical students with the use of HTML and CSS</li>
-					<li>Enabled students to complete workshop exercises by providing knowledge and encouragement</li>
-				</ul>
-			</article>
-		</section>
-		<section id="additional">
-			<h2>Additional Work Experience</h2>
-			<article>
-				<span class="date">2011 &ndash; Present</span>
-				<h3>Server, <span class="italic">Hues Kitchen</span></h3>
-				<ul>
-					<li>Provided service to patrons, many of whom visit the establishment frequently</li>
-					<li>Worked independently, often without any form of managerial oversight</li>
-					<li>Solved customers' problems, ensuring their satisfaction and repeated patronage of the restaurant</li>
-				</ul>
-			</article>
-			<article>
-				<span class="date">2008 &ndash; 2011</span>
-				<h3>Barista, bartender, and server, <span class="italic">Cafe Crepe</span></h3>
-				<ul>
-					<li>Worked in a fast-paced, high-stress environment</li>
-					<li>Acted as part of a mid-sized team with a conventional management hierarchy</li>
-					<li>Developed procedures to increase the productivity of high-volume drink making</li>
-				</ul>
-			</article>
-			<article>
-				<span class="date">2004 &ndash; 2008</span>
-				<h3>Lead Counselor, <span class="italic">Arts Explorer Day Camp</span></h3>
-				<ul>
-					<li>Ensured the entertainment and safety of 20+ children ages 6 to 7</li>
-					<li>Managed other counselors and volunteers</li>
-					<li>Assisted in planning activities with the Camp Director</li>
-				</ul>
-			</article>
-		</section>
-		<section>
-			<h2>Awards and Other Experience</h2>
-			<article>
-				<h3>Awards from <span class="italic">Jarvis Collegiate Institute</span> (High School)</h3>
-				<ul>
-					<li>Received multiple awards from the <span class="italic">Toronto Star</span>
-					as the Editor-in-Chief and Layout Editor of the school paper, including
-					Best Newspaper and Best Editorial</li>
-					<li>Given the Duncan Green Award upon graduation for excellence in the dramatic arts</li>
-					<li>Selected for the Writers Craft Award upon graduation, for attaining the highest mark
-					in the course that year</li>
-				</ul>
-			</article>
-			<article>
-				<h3>Relevant Hobbies</h3>
-				<ul>
-					<li>Ran a linux server with public facing Apache and SSH</li>
-					<li>Read "Hacking: the Art of Exploitation, 2nd Edition" by Jon Erickson as well as having participated in
-					online hacking challenges</li>
-					<li>Completed 45 problems on projecteuler [dot] net, a site containing mathematically challenging
-					programming problems</li>
-				</ul>
-			</article>
-		</section>
+    <div>
+      <header>
+        <h1>Max Barkley</h1>
+        (647) 884 3663<br />
+        max.barkley@gmail.com<br />
+        www.mpbarkley.ca
+      </header>
+      <section>
+        <h2>Technical Skills</h2>
+        <article class="skills">
+          <ul>
+            <li>Programming Languages: Java, Bash, HTML/CSS, Javascript, Python, SQL, C</li>
+            <li>Libraries and Frameworks: Errai, GWT, Java EE, Java CDI, Struts, JQuery</li>
+            <li>Applications and Tools: Maven, JBoss/Wildfly AS, Weld, Git, Subversion, Eclipse</li>
+            <li>Development Environments: Fedora, Ubuntu, and KDE Debian</li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <article>
+          <span class="date">2009 &ndash; Present</span>
+          <h3>H.B.Sc. Mathematics and Computer Science, <span class="italic">University of Toronto</span></h3>
+          <ul>
+            <li>Currently enrolled with a Mathematics Major, and Computer Science and Statistics Minors</li>
+            <li>3.35 CGPA</li>
+            <li>Relevant Courses: Software Design, Datastructures and Analysis, Introduction to Databases,
+            Programming on the Web, Software and System Tools, Computer Organization</li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <h2>Relevant Work Experience</h2>
+        <article>
+          <span class="date">2013 &ndash; Present</span>
+          <h3>Software Engineering Intern, <span class="italic">Red Hat</span></h3>
+          <ul>
+            <li>Worked on JBoss Errai, an open source, enterprise Java web framework using the Google Web Toolkit (GWT)</li>
+            <li>Developed and maintained framework code (300 000+ lines)</li>
+            <li>Developed Blockdrop &mdash; a multi-player, tetris-like game &mdash; as a demonstration of Errai</li>
+            <li>Improved the "Getting Started" experience by creating a JBoss Forge addon and tutorials</li>
+            <li>Assisted community users via forum and IRC</li>
+          </ul>
+        </article>
+        <article>
+          <span class="date">2012 &ndash; Present</span>
+          <h3>(Volunteer) Mentor, <span class="italic">Ladies Learning Code</span></h3>
+          <ul>
+            <li>Assisted non-technical students with the use of HTML/CSS, Javascript, and Python</li>
+            <li>Enabled students to complete workshop exercises by providing knowledge and encouragement</li>
+          </ul>
+        </article>
+        <article>
+          <span class="date">2012 &ndash; 2013</span>
+          <h3>Webmaster, <span class="italic">ScratchVox</span></h3>
+          <ul>
+            <li>Programmed front- and back-end code for the website (HTML/CSS, Javascript, PHP, and SQL)</li>
+            <li>Tested the site's appearance across multiple platforms and browsers</li>
+            <li>Maintained and updated the site</li>
+          </ul>
+        </article>
+      </section>
+      <section id="additional">
+        <h2>Additional Work Experience</h2>
+        <article>
+          <span class="date">2011 &ndash; Present</span>
+          <h3>Server, <span class="italic">Hues Kitchen</span></h3>
+          <ul>
+            <li>Provided service to patrons, many of whom visit the establishment frequently</li>
+            <li>Worked independently, often without any form of managerial oversight</li>
+            <li>Solved customers' problems, ensuring their satisfaction and repeated patronage of the restaurant</li>
+          </ul>
+        </article>
+        <article>
+          <span class="date">2008 &ndash; 2011</span>
+          <h3>Barista, bartender, and server, <span class="italic">Cafe Crepe</span></h3>
+          <ul>
+            <li>Worked in a fast-paced, high-stress environment</li>
+            <li>Acted as part of a mid-sized team with a conventional management hierarchy</li>
+            <li>Developed procedures to increase the productivity of high-volume drink making</li>
+          </ul>
+        </article>
+        <article>
+          <span class="date">2004 &ndash; 2008</span>
+          <h3>Lead Counselor, <span class="italic">Arts Explorer Day Camp</span></h3>
+          <ul>
+            <li>Ensured the entertainment and safety of 20+ children ages 6 to 7</li>
+            <li>Managed other counselors and volunteers</li>
+            <li>Assisted in planning activities with the Camp Director</li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <h2>Awards and Other Experience</h2>
+        <article>
+          <h3>Awards from <span class="italic">Jarvis Collegiate Institute</span> (High School)</h3>
+          <ul>
+            <li>Received multiple awards from the <span class="italic">Toronto Star</span>
+            as the Editor-in-Chief and Layout Editor of the school paper, including
+            Best Newspaper and Best Editorial</li>
+            <li>Given the Duncan Green Award upon graduation for excellence in the dramatic arts</li>
+            <li>Selected for the Writers Craft Award upon graduation, for attaining the highest mark
+            in the course that year</li>
+          </ul>
+        </article>
+      </section>
+    </div>
 	</body>
 </html>
