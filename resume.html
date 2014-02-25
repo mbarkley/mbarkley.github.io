@@ -34,17 +34,18 @@
 				src= local("Arial"), url("fonts/Arial_Bold.ttf") format("truetype");
 				font-weight: bold;
 			}
-		</style>
-		<style type="text/css">
 			* {
 				box-sizing: border-box;
 				-web-kit-box-sizing: border-box;
 				-moz-box-sizing: border-box;
 			}
 			html {
-				padding: 0px;
+				padding: 0;
+        margin: 0;
 			}
 			body {
+        padding: 0;
+        margin: 0;
 				text-align: center;
 				color: black;
 				font-size: 12pt;
@@ -55,6 +56,17 @@
 				height: 792pt;
         text-align: left;
         margin: auto;
+      }
+      @media print {
+        html, body {
+          width: 100%;
+          height: 100%;
+          font-size: 14pt;
+        }
+        body > div {
+          width: 100%;
+          height: 100%;
+        }
       }
 			header {
 				text-align: center;
@@ -74,7 +86,7 @@
 			}
 			h2 {
 				font-weight: bold;
-				font-size: 16pt;
+				font-size: 125%;
 				margin-bottom: 0pt;
 				margin-top: 0pt;
 				text-align: left;
@@ -82,31 +94,47 @@
 			}
 			h3 {
 				margin: 0px auto 5px auto;
-				font-size: 11pt;
+				font-size: 1em;
 				background-color: lightgrey;
-				padding-left: 7pt;
-				padding-right: 20%;
+        padding: 0 0 0 0.66em;
 				border-radius: 3px;
 				font-weight: bold;
 				font-family: "DejaVu Serif Condensed";
-				line-height: 13pt;
+				line-height: 1.6em;
 				text-align: left;
-			}
-			h3, .date {
-				padding-top: 4px;
-				padding-bottom: 4px;
 			}
 			ul {
 				margin: 0px auto 10px auto;
 				color: rgb(20,20,20);
 				list-style-type: circle;
-				padding-left: 30px;
-        padding-right: 30px;
-				line-height: 1.15;
+				padding-left: 2.5em;
+				padding-right: 2.5em;
+				line-height: 1.2;
 			}
+      h1 a, h2 a, h3 a {
+        color: inherit;
+      }
+      a {
+        color: #454545;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      @media print {
+        a {
+          color: inherit;
+        }
+        li a {
+          color: #4D4D4D;
+        }
+      }
 			.skills ul {
 				padding-left: 20pt;
 			}
+      span.right-link {
+        display: inline-block;
+      }
 			h3 > a {
 				text-decoration: none;
 			}
@@ -119,11 +147,14 @@
 			.underline {
 				text-decoration: underline;
 			}
-			.date {
+			span.date {
+        padding: 0;
 				float: right;
 				margin-right: 10px;
 				font-family: "DejaVu Serif Condensed";
-				font-size: 11pt;
+				font-size: 0.98em;
+        line-height: 1.6em;
+        font-weight: normal;
 			}
 		</style>
 	</head>
@@ -132,15 +163,15 @@
       <header>
         <h1>Max Barkley</h1>
         (647) 884 3663<br />
-        max.barkley@gmail.com<br />
-        www.mpbarkley.ca
+        <a href="mailto:max.barkley@gmail.com">max.barkley@gmail.com</a><br />
+        <a target="_blank" href="http://www.mpbarkley.ca">www.mpbarkley.ca</a>
       </header>
       <section>
         <h2>Technical Skills</h2>
         <article class="skills">
           <ul>
             <li>Programming Languages: Java, Bash, HTML/CSS, Javascript, Python, SQL, C</li>
-            <li>Libraries and Frameworks: Errai, GWT, Java EE, Java CDI, Struts, JQuery</li>
+            <li>Libraries and Frameworks: Errai, GWT, Java EE, Weld, Struts, JQuery</li>
             <li>Applications and Tools: Maven, JBoss/Wildfly AS, Weld, Git, Subversion, Eclipse</li>
             <li>Development Environments: Fedora, Ubuntu, and KDE Debian</li>
           </ul>
@@ -149,10 +180,9 @@
       <section>
         <h2>Education</h2>
         <article>
-          <span class="date">2009 &ndash; Present</span>
-          <h3>H.B.Sc. Mathematics and Computer Science, <span class="italic">University of Toronto</span></h3>
+          <h3>H.B.Sc. Mathematics and Computer Science, <span class="italic"><a target="_blank" href="http://www.utoronto.ca/">University of Toronto</a></span><span class="date">2009 &ndash; 2015</span></h3>
           <ul>
-            <li>Currently enrolled with a Mathematics Major, and Computer Science and Statistics Minors</li>
+            <li>Enrolled as a Mathematics Major, with Computer Science and Statistics Minors</li>
             <li>3.35 CGPA</li>
             <li>Relevant Courses: Software Design, Datastructures and Analysis, Introduction to Databases,
             Programming on the Web, Software and System Tools, Computer Organization</li>
@@ -162,39 +192,27 @@
       <section>
         <h2>Relevant Work Experience</h2>
         <article>
-          <span class="date">2013 &ndash; Present</span>
-          <h3>Software Engineering Intern, <span class="italic">Red Hat</span></h3>
+          <h3>Software Engineering Intern, <span class="italic"><a target="_blank" href="http://ca.redhat.com/">Red Hat</a></span><span class="date">2013 &ndash; 2014</span></h3>
           <ul>
-            <li>Worked on JBoss Errai, an open source, enterprise Java web framework using the Google Web Toolkit (GWT)</li>
-            <li>Developed and maintained framework code (300 000+ lines)</li>
-            <li>Developed Blockdrop &mdash; a multi-player, tetris-like game &mdash; as a demonstration of Errai</li>
-            <li>Improved the "Getting Started" experience by creating a JBoss Forge addon and tutorials</li>
+            <li>Worked on Errai, an open source, enterprise Java web framework using the Google Web Toolkit (GWT)</li>
+            <li>Developed and maintained framework code <span class="right-link">(<a target="_blank" href="https://github.com/errai/errai">github.com/errai/errai</a>)</span></li>
+            <li>Created Blockdrop &mdash; a multi-player, tetris-like game &mdash; as a demo of Errai <span class="right-link">(<a target="_blank" href="https://github.com/mbarkley/block-drop">github.com/mbarkley/block-drop</a>)</span></li>
+            <li>Improved "Getting Started" experience by creating a JBoss Forge addon and tutorial <span class="right-link">(<a target="_blank" href="https://github.com/errai/forge-errai">github.com/errai/forge-errai</a>)</span></li>
             <li>Assisted community users via forum and IRC</li>
           </ul>
         </article>
         <article>
-          <span class="date">2012 &ndash; Present</span>
-          <h3>(Volunteer) Mentor, <span class="italic">Ladies Learning Code</span></h3>
+          <h3>(Volunteer) Mentor, <span class="italic"><a target="_blank" href="http://ladieslearningcode.com/">Ladies Learning Code</a></span><span class="date">2012 &ndash; Present</span></h3>
           <ul>
             <li>Assisted non-technical students with the use of HTML/CSS, Javascript, and Python</li>
             <li>Enabled students to complete workshop exercises by providing knowledge and encouragement</li>
-          </ul>
-        </article>
-        <article>
-          <span class="date">2012 &ndash; 2013</span>
-          <h3>Webmaster, <span class="italic">ScratchVox</span></h3>
-          <ul>
-            <li>Programmed front- and back-end code for the website (HTML/CSS, Javascript, PHP, and SQL)</li>
-            <li>Tested the site's appearance across multiple platforms and browsers</li>
-            <li>Maintained and updated the site</li>
           </ul>
         </article>
       </section>
       <section id="additional">
         <h2>Additional Work Experience</h2>
         <article>
-          <span class="date">2011 &ndash; Present</span>
-          <h3>Server, <span class="italic">Hues Kitchen</span></h3>
+          <h3>Server, <span class="italic">Hues Kitchen</span><span class="date">2011 &ndash; Present</span></h3>
           <ul>
             <li>Provided service to patrons, many of whom visit the establishment frequently</li>
             <li>Worked independently, often without any form of managerial oversight</li>
@@ -202,8 +220,7 @@
           </ul>
         </article>
         <article>
-          <span class="date">2008 &ndash; 2011</span>
-          <h3>Barista, bartender, and server, <span class="italic">Cafe Crepe</span></h3>
+          <h3>Barista, bartender, and server, <span class="italic">Cafe Crepe</span><span class="date">2008 &ndash; 2011</span></h3>
           <ul>
             <li>Worked in a fast-paced, high-stress environment</li>
             <li>Acted as part of a mid-sized team with a conventional management hierarchy</li>
@@ -211,8 +228,7 @@
           </ul>
         </article>
         <article>
-          <span class="date">2004 &ndash; 2008</span>
-          <h3>Lead Counselor, <span class="italic">Arts Explorer Day Camp</span></h3>
+          <h3>Lead Counselor, <span class="italic">Arts Explorer Day Camp</span><span class="date">2004 &ndash; 2008</span></h3>
           <ul>
             <li>Ensured the entertainment and safety of 20+ children ages 6 to 7</li>
             <li>Managed other counselors and volunteers</li>
