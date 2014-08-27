@@ -49,7 +49,7 @@
 				text-align: center;
 				color: black;
 				font-size: 12pt;
-				font-family: "Times New Roman", serif;
+				font-family: Arial, sans-serif;
 			}
       body > div {
 				width: 612pt;
@@ -103,13 +103,21 @@
 				line-height: 1.6em;
 				text-align: left;
 			}
+      td {
+        padding-left: 2.5em;
+      }
+      td:first-child {
+				font-family: "Arial", sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+      }
 			ul {
 				margin: 0px auto 10px auto;
 				color: rgb(20,20,20);
 				list-style-type: circle;
 				padding-left: 2.5em;
 				padding-right: 2.5em;
-				line-height: 1.2;
+				line-height: 1.4;
 			}
       h1 a, h2 a, h3 a {
         color: inherit;
@@ -156,6 +164,10 @@
         line-height: 1.6em;
         font-weight: normal;
 			}
+
+      .extra {
+        display: none;
+      }
 		</style>
 	</head>
 	<body>
@@ -167,14 +179,28 @@
         <a target="_blank" href="http://www.mpbarkley.ca">www.mpbarkley.ca</a>
       </header>
       <section>
-        <h2>Technical Skills</h2>
+        <h2>Technical Skills Summary</h2>
         <article class="skills">
-          <ul>
-            <li>Programming Languages: Java, Bash, HTML/CSS, Javascript, Python, SQL, C</li>
-            <li>Libraries and Frameworks: Errai, GWT, Java EE, Weld, Struts, JQuery</li>
-            <li>Applications and Tools: Maven, JBoss/Wildfly AS, Weld, Git, Subversion, Eclipse</li>
-            <li>Development Environments: Fedora, Ubuntu, and KDE Debian</li>
-          </ul>
+          <table>
+            <tr>
+              <td>Proficient Programming Languages
+              <td>Java, Bash, Javascript, Python
+            <tr>
+              <td>Familiar Programming Languages
+              <td>SQL, C, Scala, Haskell
+            <tr>
+              <td>Markup Languages
+              <td>HTML/CSS, Asciidoc, Markdown
+            <tr>
+              <td>Libraries and Frameworks
+              <td>Errai, Google Web Toolkit, JavaEE, AngularJS, JQuery, LESS
+            <tr>
+              <td>Applications and Tools
+              <td>Maven, JBoss/Wildfly AS, Weld, Git, Subversion, Eclipse</li>
+            <tr>
+              <td>Development Environments
+              <td>Fedora, Ubuntu, and KDE Debian
+          </table>
         </article>
       </section>
       <section>
@@ -194,17 +220,28 @@
         <article>
           <h3>Software Engineering Intern, <span class="italic"><a target="_blank" href="http://ca.redhat.com/">Red Hat</a></span><span class="date">2013 &ndash; 2014</span></h3>
           <ul>
-            <li>Worked on Errai, an open source, enterprise Java web framework using the Google Web Toolkit (GWT)</li>
+            <li>Worked on Errai, an open source, enterprise Java web framework using the Google Web Toolkit</li>
             <li>Developed and maintained framework code <span class="right-link">(<a target="_blank" href="https://github.com/errai/errai">github.com/errai/errai</a>)</span></li>
             <li>Created Blockdrop &mdash; a multi-player, tetris-like game &mdash; as a demo of Errai <span class="right-link">(<a target="_blank" href="https://github.com/mbarkley/block-drop">github.com/mbarkley/block-drop</a>)</span></li>
-            <li>Improved "Getting Started" experience by creating a JBoss Forge addon and tutorial <span class="right-link">(<a target="_blank" href="https://github.com/errai/forge-errai">github.com/errai/forge-errai</a>)</span></li>
+            <li>Improved "Getting Started" experience by creating a JBoss Forge addon and tutorial <span class="right-link">(<a target="_blank" href="https://github.com/errai/errai/tree/master/errai-forge-addon">github.com/errai/errai/tree/master/errai-forge-addon</a>)</span></li>
             <li>Assisted community users via forum and IRC</li>
+          </ul>
+        </article>
+        <article>
+          <span class="date">2012 &ndash; Present</span>
+          <h3>Webmaster, <span class="italic"><a target="_blank" href="http://www.scratchvox.ca">ScratchVox</a></span></h3>
+          <ul>
+            <li>Programmed front-end of web site with HTML, CSS, and Javascript (AngularJS)
+            <li>Programmed back-end APIs with Python and SQL
+            <li>Tested the site's appearance across multiple platforms and browsers</li>
+            <li>Manage hosting of site</li>
+            <li>Maintain and update the site</li>
           </ul>
         </article>
         <article>
           <h3>(Volunteer) Mentor, <span class="italic"><a target="_blank" href="http://ladieslearningcode.com/">Ladies Learning Code</a></span><span class="date">2012 &ndash; Present</span></h3>
           <ul>
-            <li>Assisted non-technical students with the use of HTML/CSS, Javascript, and Python</li>
+            <li>Assisted non-technical students with the use of HTML, CSS, Javascript, and Python</li>
             <li>Enabled students to complete workshop exercises by providing knowledge and encouragement</li>
           </ul>
         </article>
@@ -219,7 +256,7 @@
             <li>Solved customers' problems, ensuring their satisfaction and repeated patronage of the restaurant</li>
           </ul>
         </article>
-        <article>
+        <article class="extra">
           <h3>Barista, bartender, and server, <span class="italic">Cafe Crepe</span><span class="date">2008 &ndash; 2011</span></h3>
           <ul>
             <li>Worked in a fast-paced, high-stress environment</li>
@@ -236,7 +273,7 @@
           </ul>
         </article>
       </section>
-      <section>
+      <section class="extra">
         <h2>Awards and Other Experience</h2>
         <article>
           <h3>Awards from <span class="italic">Jarvis Collegiate Institute</span> (High School)</h3>
